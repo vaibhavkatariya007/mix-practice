@@ -1,0 +1,24 @@
+CORE SERVICES OF AWS:--
+
+1. EC2 (Elastic Cloud Compute)
+2. S3 (Simple Storage Service)
+3. RDS (Relational Database Service)
+4. Route53
+
+
+-----
+Enhancing Your App with AWS Databases and Application Services
+
+1. Elastic Beanstalk (EB)
+2. Lambda
+3. DynamoDB
+4. Virtual Private Cloud (VPC)
+5. CloudFront
+6. CloudWatch
+
+----
+Harnessing the power of AWS from the command line to code
+
+1.  web console
+2. CLI utility
+3. SDK

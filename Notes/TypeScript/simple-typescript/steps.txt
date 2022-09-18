@@ -1,0 +1,11 @@
+//steps
+npm init
+npm i -D typescript
+to compile
+    npx tsc file.ts
+configure ts in project folder
+npx tsc --init    
+npm i -D nodemon
+npm i -D concurrently
+
+npx concurrently "tsc -w" "nodemon -w dist -q dist/index.js"

@@ -1,0 +1,455 @@
+<!-------  HTML --------->
+
+TOOL::
+https://stackblitz.com/edit/react
+
+DUMMY API's::
+https://randomuser.me/api/
+DOC:: 
+https://randomuser.me/documentation#howto
+
+TEST::
+https://randomuser.me/api/?results=50&inc=gender,name,nat,picture
+
+Question : show grid of pictures:::
+ Have search box, type name and show that person...
+
+NEED MORE INFO::
+https://reqres.in/api/products/
+https://dummy.restapiexample.com/
+
+https://random-data-api.com/api/users/random_user?size=30
+API doc::
+https://random-data-api.com/documentation
+
+TOOL:
+
+https://codesandbox.io/embed/react-typescript-playground-j2dt6
+
+USE JS FIDDLE:: FOR TEST::  USE COLABRATIVE TOOL
+
+https://jsfiddle.net/vibhukatariya/7j2dmyfb/1/
+
+Gen Questions :-
+How many applications you have successfully delivered, and those are on production 
+can u showcase anyone of it in which you feel that you have did a good quality work.?
+can u show some react code?
+
+How much you Rate yourself  on the following techs?  
+ HTML
+ CSS
+ Javascript
+ ReactJS
+
+HTML QUESTIONS : - 
+
+Q. Is this a valid HTML?
+<p>
+<div>
+   <p>
+      <span>
+        <div>
+          <p>
+            <span></span>
+          </p>
+        </div>
+      </span>
+   </p>
+</div>
+</p>
+
+1. which style it will take  and  why?
+
+<div id='m' class='x'/>
+
+div{
+    background-color:red;
+}
+div#m{
+    background-color:green;
+}
+div.x{
+    background-color:orange;
+}
+
+2. List Some HTML5 tags?
+
+// Optional
+3. How to validate the HTML? How you make sure that this is SEO friendly?
+
+
+CSS 
+REF: https://www.interviewbit.com/css-interview-questions/
+----------
+Q1.  What are the limitations of CSS?
+Disadvantages of CSS are given below:
+
+a) Browser Compatibility: 
+Some style selectors are supported and some are not.
+ We have to determine which style is supported or not using the @support selector).
+
+b) Cross Browser issue: 
+Some selectors behave differently in a different browser).
+
+c) There is no parent selector: 
+Currently, Using CSS, you can’t select a parent tag.
+
+
+Q2. can i include one css file in another css?
+ Import a stylesheet file (An external file imported into another CSS file): 
+ Another way to add CSS is by using the @import rule. 
+ This is to add a new CSS file within CSS itself.
+@import "path/to/style.css";
+
+Q3. Diff b/w SASS vs SCSS
+
+SASS is based on indentation and SCSS(Sassy CSS) is not.
+SASS uses .sass extension while SCSS uses .scss extension.
+SASS doesn’t use curly brackets or semicolons. SCSS uses it, just like the CSS.
+
+LESS: LESS is an acronym for “Leaner Stylesheets”. LESS is easy to add to any javascript projects by using NPM or less.js file. It uses the extension .less.
+
+LESS syntax is the same as the SCSS with some exceptions. LESS uses @ to define the variables.
+
+Stylus: Stylus offers a great deal of flexibility in writing syntax, supports native CSS as well as allows omission of brackets, colons, and semicolons.
+ It doesn’t use @ or $ for defining variables.
+
+
+Q4. What is VH/VW (viewport height/ viewport width) in CSS?
+It’s a CSS unit used to measure the height and width in percentage with respect to the viewport.
+ It is used mainly in responsive design techniques. The measure VH is equal to 1/100 of the 
+ height of the viewport. If the height of the browser is 1000px, 1vh is equal to 10px. 
+ Similarly, if the width is 1000px, then 1 vw is equal to 10px.
+
+Q5.Difference between reset vs normalize CSS?. How do they differ?
+Reset CSS: CSS resets aim to remove all built-in browser styling.
+ For example margins, paddings, font-sizes of all elements are reset to be the same. 
+
+Normalize CSS: Normalize CSS aims to make built-in browser styling consistent across browsers. 
+It also corrects bugs for common browser dependencies.
+
+Q6.What is a Pseudo element? What is pseudo-class?
+
+Q7.What does DOM reflow occur?
+Reflow is the name of the web browser process for re-calculating the positions 
+and geometries of elements in the document, for the purpose of re-rendering part or 
+all of the document. 
+
+Reflow occurs when:
+
+Insert, remove or update an element in the DOM.
+Modify content on the page, e.g. the text in an input box.
+Move a DOM element.
+Animate a DOM element.
+Take measurements of an element such as offsetHeight or getComputedStyle.
+Change a CSS style
+
+Q8. Can you name the four types of @media properties?
+The four types of @media properties are:
+
+All → It’s the default property. Used for all media-type devices.
+Screen → Used for computer screen, mobile screen.
+Print → Used for printers.
+Speech → Used for screen readers.
+
+Q9.What does the :root pseudo-class refer to?
+The :root selector allows you to target the highest-level “parent” element in the DOM, 
+or document tree. It is defined in the CSS Selectors Level 3 specification.
+
+Q10.  Difference between CSS grid vs flexbox?
+CSS Grid Layout is a two-dimensional system, meaning it can handle both columns and rows. 
+Grid layout is intended for larger-scale layouts which aren’t linear in design.
+
+Flexbox is largely a one-dimensional system (either in a column or a row). 
+Flexbox layout is most appropriate to the components of an application.
+
+Q11. What do CSS Custom properties variables mean?
+Custom properties (sometimes referred to as CSS variables or cascading variables) 
+are defined by users that contain specific values to be reused throughout a document. 
+The value is set using -- notion. And the values are accessed using the var() function.
+
+ex.
+:root {
+	--main-bg-color: brown
+}
+
+.one {
+	color: white;
+	background-color· var (--main-bg-color);
+	margin: l0px,
+	width: 50px,
+	height: 5Opx;
+	display: inline-block;
+}
+
+
+Q12.  How to determine if the browser supports a certain feature?
+The @support in CSS can be very useful to scan if the current browser has 
+support for a certain feature.
+
+@supports (display: grid) {
+	div {
+		display: grid;
+	}
+}
+
+
+
+Create a registration form that will contain?
+USE API : https://jsonplaceholder.typicode.com/posts
+
+ ---- JSON schema : 
+ {
+    "firstName": "Randy",
+    "lastName": "Orton",
+    "collegeName": "Christopher College",
+    "mobile": 9090897878,
+    "gender": "male",
+    "age": 25,
+    "userType": "admin",
+    "terms": true
+}
+
+// College Registration form : 
+
+--- College Name (InputBox)
+--- First Name (InputBox)
+--- Last Name (InputBox)
+--- Mobile (Number)
+     -- Validate 10 digit No.
+--- Gender (Radio buttons)
+     -- Male
+     -- Female
+     -- Other
+--- Age (Number)
+    -- Validate age > 18
+--- UserType (Select List)
+     -- Teacher
+     -- Student
+     -- Dean
+     -- Admin     
+---  Agree Terms and condions (CheckBox)     
+---   Submit ----
+
+
+CSS3 Question : - 
+1. What is CSS flexbox? Write all the properties of the flexbox.
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+2. What are CSS pseudo-classes?
+
+Answer: It is a class that is used to define a special state of an
+ HTML element.
+
+This class can be used by styling an element when a user snooped over it 
+and also it 
+can style an HTML element when it gets the focus.
+
+3. Explain the concept of pseudo-elements in CSS.
+
+Answer: It is a feature of CSS which is used to style the given parts 
+of an element.
+
+For Example, we can style the first letter or line of an HTML element.
+
+<!-------- Javascript ----------->
+
+ Q1 . What are clousers in javascript? can u write some code.
+ Q2. Difference b/w fat arrow and regular function?
+ Q3. what Event Loop?
+ Q4. Promises in Javascript? / Async / await
+ Q5. How to enhance the performance debouncing and throttling?
+ Q6. What are anymous function?
+ Q7. Diff b/w var,let and const?
+ Q8. What is the diff b/w call, apply and bind?
+ Q9. Event bubbling and capturing?
+ Q10. async & defer?
+ Q11. Prototype & Prototype inheritance
+ Q12. Web Workers?  
+
+ What is 'this' keyword in JavaScript?
+ 'This' keyword refers to the object from where it was called.
+ 
+ What is the difference between ViewState and SessionState?
+'ViewState' is specific to a page in a session.
+'SessionState' is specific to user specific data that can be accessed 
+across all pages in the web application.
+
+What is the use of Void(0)?
+Void(0) is used to prevent the page from refreshing and parameter
+ "zero" is passed while calling.
+Void(0) is used to call another method without refreshing the page.
+
+  What is the output of following?
+
+
+
+ a) Get unique values from array 
+ var arr = [1,3,4,4,4,5,5,33,33,55];
+ & what happen if i pass [{a:'123'}, 12 , "xyz"]?
+ o/p = [1,3,4,5,33,55]
+
+
+ Q. How to Deep Freeze?
+ const myObj = {
+  a: 1,
+  b: 'hello',
+  c: [0, 1, 2],
+  d: { e: 1, f: 2 }
+};
+
+const deepFreeze = obj => {
+  Object.keys(obj).forEach(prop => {
+    if (typeof obj[prop] === 'object' && !Object.isFrozen(obj[prop])) deepFreeze(obj[prop]);
+  });
+  return Object.freeze(obj);
+};
+deepFreeze(myObj);
+
+myObj.a = 10;
+myObj.b = 'hi';
+myObj.c[1] = 4;
+myObj.d.e = 0;
+
+/*
+myObj = {
+  a: 1,
+  b: 'hello',
+  c: [0, 1, 2],
+  d: { e: 1, f: 2 }
+}
+*/
+
+
+Q. o/p
+var variable1 = 23;
+
+let variable2 = 89;
+
+function catchValues(){
+  console.log(variable1);
+  console.log(variable2);
+
+
+}
+
+window.variable1; 
+
+window.variable2; 
+
+// Returns the value 23
+// Returns undefined    
+// Both the variables can be accessed anywhere since they 
+are declared in the global scope
+
+
+Q.
+var obj1 = {
+  valueOfThis: function(){
+    return this;
+  }
+}
+var obj2 = {
+  valueOfThis: ()=>{
+    return this;
+  }
+}
+
+obj1.valueOfThis(); 
+obj2.valueOfThis(); 
+
+// Will return the object obj1
+// Will return window/global object
+
+ //---1 What is Hoisting
+console.log(a);
+var a = 10;
+function print() {
+  console.log(a);
+  var a = 20;
+}
+print();
+console.log(a);
+
+o/p = ? 
+
+/// ---2
+function test() {
+  return 'Hello!';
+}
+const sentence = test`hi`;
+console.log(sentence);
+o/p = ?
+
+// This will call a function
+const sentence = test`hi`;
+console.log(sentence);
+o/p = ?
+
+/// --- 3
+
+var A = {
+  x: function () {
+    console.log('x');
+  },
+  y: function () {
+    console.log('y');
+  },
+  z: function () {
+    console.log('z');
+  },
+};
+ 
+How to get this behaviour?
+A.x().y().z();
+
+write a function to get the sum of n numbers?
+Have U Functions are First-Class Functions
+sum(1)(2)...(n)();
+
+function sum(a){
+return function (b){
+if(b){
+return sum(a+b);
+}
+return a;
+}
+}
+
+<!--------- REACT ------->
+Q1. How you decide the framework?angular/react/vue/svelet.
+Q2. How react works?
+Q3. React 16 component lifecycle?
+Q4. How to share the business logic among the components.
+Q5. How to write scoped styling for components?
+Q6. What is react portal?
+Q7. Which react Hooks u have worked on?  and
+what is the diff between useMemo and useCallback?
+Q8. What are controlled and uncontrolled components?
+Q9. How to implement the global state.(Redux/context API)
+Q10. What are redux middlewares? why to use them.
+Q11. How to refresh the token? Best approach.
+Q12. How to test the component in an isolated environment.(Story Book)?
+Q13. Which tools you used for optimzation and mesure performance?
+Any knowlege of webpack , rollup, parcel etc. bundling tools.
+Q14. Which libraries You have worked on. any knowledge of D3 or chartsjs.
+Q15. How to achieve the dynamic title in SPA?
+Q16. Have u ever setup the react project from scratch? Give Steps?
+Q17. What is Tree Shaking? and DRY Principle?
+Q18. Any Knowlege in Serve Side Rendering Apps.
+Q19. AOT and JIT?
+Q20. How Your JSX get compiled?
+
+
+Technical concepts:
+Q1. Resizing the window, and i m sharing my screen how u will optimize.
+Q2. convert class comp to functional comp using hooks?
+Q3. Difference between useCallback or useMemo? Give Example.
+Q4. Integrate following search API and Optimize
+https://demo.dataverse.org/api/search?q=<query>? 
+

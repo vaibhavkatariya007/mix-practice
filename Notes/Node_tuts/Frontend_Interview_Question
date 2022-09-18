@@ -1,0 +1,35 @@
+//Javascript:
+
+Q1.OutPut for the following ? Why ? (Need to explain hoistiing)
+
+(function print() {
+    let a = "test1";
+
+    if (true) {
+        let b = "test2";
+    }
+    console.log("Value Of A:", a);
+    console.log("Value Of B:", b);
+})();
+
+(function print() {
+    let a = "test1";
+
+    if (true) {
+        var b = "test2";
+    }
+    console.log("Value Of A:", a);
+    console.log("Value Of B:", b);
+})();
+
+(function print() {
+    a = "test1";
+    if (true) {
+        b = "test2";
+    }
+    console.log("Value Of A:", a);
+    console.log("Value Of B:", b);
+})();
+
+console.log("Value Of A:", a);
+console.log("Value Of B:", b);

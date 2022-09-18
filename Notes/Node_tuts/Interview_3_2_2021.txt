@@ -1,0 +1,23 @@
+Tomorrow-Interview Questions::
+
+Js: 
+Q1. var arr = [1,3,4,4,4,5,5,33,33,55];
+list = list.filter((x, i, a) => a.indexOf(x) === i)
+
+Q2. A.x().y().z();
+Q3. sum(1)(2)...(n)();
+
+
+React Question:
+Q1. What are Portals is React?
+Q2. Difference b/w useCallback & useMemo?
+Q3. Create Custom Hook? (https://blog.bitsrc.io/writing-your-own-custom-hooks-4fbcf77e112e)
+Q4. Can u create a react component to include 
+<script async src='https://embed.tawk.to/603552d3918aa2612741f41f/1ev84n3it' charset='UTF-8' crossorigin="anonymous">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();</script>
+    in an application?
+
+
+Extras-
+GraphQL
+

@@ -1,0 +1,9 @@
+If create-react-app cmd fails
+
+npm cache clean --force
+
+use with npx 
+
+npx create-react-app <app_name>
+
+than try again...

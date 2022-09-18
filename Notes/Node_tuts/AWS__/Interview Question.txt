@@ -1,0 +1,51 @@
+// INTERVIEW Questions : ----- 
+
+1. Tell Me about what type of work you have done 
+and your primary skills, and what your responsibility in brief?
+
+2. why you choose React rather than going with Angular? Give some diffrences?
+
+3. what type of app you have created on react and for which domain?
+
+4. Which rect Version you are currently using? 
+what are the diffrences in older and new react?
+
+5. What are the best Practice to setup the react project?
+
+6. what is the default flow of react? how can we make bidirectional stuff is rect?
+
+7. What are high order components?
+
+8. what are route? how can we implement them? give basic flow?
+
+9. What is reconcillation? 
+
+10. what are pure components?
+
+14. what is JSX? how it is known by the browser?
+
+12 . What is redux and why we use it? diffrence b/w Mobx And Flux And Redux. 
+whch one is best and why?
+
+13. How middleware are helpful for us? 
+
+16. How can we increase the performance of rect application?
+
+17. What is shallow rendering? 
+
+18. can we do server side rendering?  if yes than How? which one is best server 
+side rendering or client side rendering?
+
+19. How can we check type of props? which library you are using? Flow PropsTypes?
+
+20. What are uncontrolled components? 
+
+You Know es6. 
+How can you combine all of the files together? 
+New things in es6.
+
+Diffrence b/w arrow function and normal function? 
+
+
+
+

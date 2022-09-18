@@ -1,0 +1,3 @@
+https://www.sitepoint.com/vue-js-tools-libraries/
+
+https://medium.com/better-programming/9-vue-js-libraries-that-will-make-your-life-easier-5f14c09b0ce0

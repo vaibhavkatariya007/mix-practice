@@ -1,0 +1,27 @@
+
+/// IMP--- links
+
+REACT:::
+https://kentcdodds.com/blog/react-hooks-pitfalls
+
+https://medium.com/javascript-inside
+
+https://create-react-app.dev/docs/running-tests
+
+https://devhints.io/react
+
+https://testdriven.io/blog/tdd-with-react-jest-and-enzyme-part-one/
+
+https://blog.bitsrc.io/how-to-test-react-components-with-jest-and-enzyme-in-depth-145fcd06b90
+
+https://pusher.com/tutorials/react-jest-enzyme#testing-react-components-with-snapshots
+
+https://blog.bitsrc.io/understanding-react-default-props-5c50401ed37d
+
+https://blog.logrocket.com/validating-react-component-props-with-prop-types-ef14b29963fc/
+
+https://blog.bitsrc.io/understanding-react-proptypes-type-checking-in-react-9648a62ce12e
+
+https://codeburst.io/validating-props-easily-with-react-proptypes-96e80208207
+
+https://blog.bitsrc.io/master-proptypes-in-react-a80f9fefff8

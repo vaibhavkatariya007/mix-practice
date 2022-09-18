@@ -1,0 +1,80 @@
+Scope
+A function's runtime scope describes the variables available for use 
+inside a given function. The code inside a function has access to:
+
+The function's arguments.
+Local variables declared within the function.
+Variables from its parent function's scope.
+Global variables.
+Check out the following image that highlights a function's scope, 
+then we'll take a look at a live example.
+
+
+
+Scope Chain
+Whenever your code attempts to access a variable during a function call,
+ the JavaScript interpreter will always start off by looking within its 
+ own local variables. If the variable isn't found, the search will 
+ continue looking up what is called the scope chain. Let's take a look 
+ at an example:
+
+ function one() {
+  two();
+  function two() {
+    three();
+    function three() {
+      // function three's code here
+    }
+  }
+}
+
+one();
+
+In the above example, when one() is called, all the other nested
+functions will be called as well (all the way to three()).
+
+
+You can visualize the scope chain moving outwards starting at the 
+innermost level: from three(), to two(), to one(), and finally to 
+window (i.e., the global/window object). This way, the function three() 
+will not only have access to the variables and functions "above" 
+it (i.e., those of two() and one()) -- three() will also have access 
+to any global variables defined outside one().
+
+
+Variable Shadowing
+What happens when you create a variable with the same name as another 
+variable somewhere in the scope chain?
+
+JavaScript won't throw an error or otherwise prevent you from creating 
+that extra variable. In fact, the variable with local scope will just 
+temporarily "shadow" the variable in the outer scope. This is called 
+variable shadowing. Consider the following example:
+const symbol = '¥';
+
+function displayPrice(price) {
+  const symbol = '$';
+  console.log(symbol + price);
+}
+
+displayPrice('80');
+// '$80'
+
+In the above snippet, note that symbol is declared in two places:
+
+Outside the displayPrice() function, as a global variable.
+Inside the displayPrice() function, as a local variable.
+After invoking displayPrice() and passing it an argument of '80',
+ the function outputs '$80' to the console.
+
+How does the JavaScript interpreter know which value of symbol to use? 
+Well, since the variable pointing to '$' is declared inside a function 
+(i.e., the "inner" scope), it will override any variables of the same 
+name that belong in an outer scope -- such as the global variable 
+pointing to '¥'. As a result, '$80' is displayed rather than '¥80'.
+
+All in all, if there are any naming overlaps between variables in 
+different contexts, they are all resolved by moving through the scope 
+chain from inner to outer scopes (i.e., local all the way to global). 
+This way, any local variables that have the same name take precedence 
+over those with a wider scope.

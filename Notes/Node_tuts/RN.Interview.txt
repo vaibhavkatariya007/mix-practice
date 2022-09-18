@@ -1,0 +1,128 @@
+
+REF:: https://www.javatpoint.com/react-native-interview-questions
+
+IMP: https://bhanu.io/react-native-asyncstorage-filesystem-based-alternative-4316aea3e11b
+
+alternative to asyncStorage
+
+How to implement session based auth?
+
+Q1. How many threads run in React Native?
+Ans. The React Native app contains the following thread:
+React Native UI Thread (Main Thread): 
+This thread is used for the layout of the mobile app.
+React Native JavaScript Thread: 
+It is a thread where our business logic will run. It means JS thread is a
+ place where our JavaScript code is executed.
+React Native Modules Thread: 
+Sometimes, our app needs access to platform API, which happens as a part
+ of native module thread.
+React Native Render Thread: This thread is used to generate actual OpenGL 
+commands used to draw the app UI.
+
+Q2. Are all React components usable in React Native?
+React web components use DOM elements (ex. div, h1, table, etc.) to display 
+on UI. But, these components are not supported in React Native. You will need 
+to find libraries or components which is made specifically for React Native. 
+It is very hard to find that there are components available, which support 
+both. But, it should be easy to figure out that the given components are made 
+for React Native or not. Thus, it makes clear that all components are not 
+usable in the React Native.
+
+Q3.  How Virtual DOM works in React Native?
+Virtual DOM is a lightweight JavaScript object, which is an in-memory 
+representation of a real DOM.
+ It is an intermediary step between the render function being called and 
+ the displaying of elements on the screen. It is similar to a node tree, 
+ which lists the elements, their attributes, and content as objects and 
+ their properties. The render function creates a node tree of the React 
+ components and then updates this node tree in response to the mutations 
+ in the data model caused by various actions done by the user or by the system.
+
+Virtual DOM works in three steps:
+
+Whenever any data changes in the React App, the entire UI is re-rendered 
+in Virtual DOM representation.
+Now, the difference between the previous DOM representation and the new 
+DOM is calculated.
+Once the calculations are completed, the real DOM updated with only 
+those things which are changed.
+
+Q4.What does a StyleSheet.create do?
+In React native, the StyleSheet.create() ensures that the values are 
+immutable and opaque. They are used to send the style only once through 
+the bridge to avoid passing a new style object.
+
+Q5. While u access a camera u get base64 image, and ur api requires a file 
+format how u will manage to send data?
+
+Q6. How u send push notifications? And how to jump into the particular screen?
+
+Q7.What are Refs in React Native?
+
+Q8.What is meant by InteractionManager, and why it is Important?
+The InteractionManager is a native module in React Native, which is 
+responsible for differing the execution of a function until an interaction 
+has finished. To handle this deferral, we need to call 
+InteractionManager.runAfterInteractions(() => {...}).
+
+The InteractionManager is important because React Native has two threads. 
+One is JavaScript UI thread, which handles drawing updates to the screen, 
+and the second thread used for all task, not on the UI thread.
+Since React Native has only one thread for making UI updates, it can
+get overloaded and drop frames, especially in navigation screen animations. 
+So, developers use the InteractionManager to ensure that the function is 
+executed after these animations occur. As a result, we do not drop frames
+on the UI thread.
+
+Q9.When would you prefer a class component over functional components?
+
+Q10. How React Native handle different screen sizes?
+React Native provides many ways to handle screen sizes. 
+Some of them are given below:
+
+1. Flexbox: It is used to provide a consistent layout on different screen 
+sizes. It has three main properties:
+
+flexDirection
+justifyContent
+alignItems
+
+2. Pixel Ratio: It is used to get access to the device pixel density by 
+using the PixelRatio class. We will get a higher resolution image if we 
+are on a high pixel density device.
+
+3. Dimensions: It is used to handle different screen sizes and 
+style the page precisely. It needs to write the code only once for 
+working on any device.
+
+4. AspectRatio: It is used to set the height or vice versa. The aspectRatio 
+is present only in React-Native, not a CSS standard.
+
+5. ScrollView: It is a scrolling container which contains multiple 
+components and view. The scrollable items can be scroll both vertically 
+and horizontally.
+
+Q11. What is the storage system in the React Native?
+React Native storage is a simple, unencrypted, asynchronous, 
+persistent system, which stores the data globally in the app. 
+It stores data in the form of a key-value pair. React Native provides 
+AsyncStorage class to store data globally. Using the AsyncStorage class, 
+we need to have a data backup and synchronization class. It is because data 
+saved on the device is not permanent and not encrypted.
+
+Q12. How to update React Native with the latest version?
+
+Q13.What is meant by Gesture Responder System?
+It is an internal system of React Native, which is responsible 
+for managing the lifecycle of gestures in the system. React Native 
+provides several different types of gestures to the users, such as tapping, 
+sliding, swiping, and zooming. The responder system negotiates these touch 
+interactions. Usually, it is used with Animated API. Also, it 
+is advised that they never create irreversible gestures.
+
+
+Coding Question::
+Q14 Integrate a following API 
+https://jsonplaceholder.typicode.com/photos
+to create horizontal list view

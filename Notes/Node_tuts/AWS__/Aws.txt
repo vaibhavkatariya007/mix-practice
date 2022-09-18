@@ -1,0 +1,7 @@
+////AWS S3 hosting:::
+
+ref:::
+
+https://www.youtube.com/watch?v=rVj3zc30-8E
+
+https://medium.com/@michal.frystacky/static-site-github-to-s3-770953a90f67

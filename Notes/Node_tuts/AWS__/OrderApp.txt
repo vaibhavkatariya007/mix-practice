@@ -1,0 +1,29 @@
+/// Resturant Order Manager App:
+
+1.Login (Via social network) --
+    a. Google
+    b. Facebook
+    c. Mobile
+
+2.Dashboard --
+    a. Analytics to track daily sales.
+    
+3.Take Order --
+    a.  Form to register customer Order. 
+        1. Customer Info
+            a. Name
+            b. Mobile
+        2. Order Items    
+    b.  Table view to see which order status (completed, pending, cancled)
+        1. Customer Name
+        2. Order No.
+        3. Order Items
+        4. Order Amount
+        5. Status 
+        6. Menu to change status 
+        
+ 4.Sync Order table with order display board via IOT (Future Plan)       
+     
+
+
+

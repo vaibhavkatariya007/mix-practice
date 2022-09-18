@@ -1,0 +1,177 @@
+Topics Covered--
+
+Javascript
+1. Equality == & ===
+2. Event Loop
+3. Recurssion
+4. Hoisting
+5. Debouncing & throtteling
+6. Prototype & Prototype inheritance
+7. Web Workers
+8. Web Sockets
+9. call, apply and bind
+10. reduce method
+11. Scoping var,let & const
+12. Event bubbling and capturing
+13. async/await and promise
+14. callbackhell
+15. async & defer
+
+
+
+Recurssion Problems 
+sum(1)(2)...(n)();
+function sum(a){
+return function (b){
+if(b){
+return sum(a+b);
+}
+return a;
+}
+}
+
+
+
+2. let user = {
+    name:"vaibhav",
+    age:30,
+    address:{
+        permanent_address:{
+            city:"Dehradun",
+            state:"Uttarakhand",
+            pin:122345
+        },
+        current_address:{
+            city:"Bangalore",
+            state:"Karnataka",
+            pin:560066
+        }
+    }
+}
+
+
+/// Flatten an object:
+let flatObj={};
+function flattenObj(Obj,Parent){
+for(key in Obj){
+    if(typeof Obj[key] ===  "object"){
+        flattenObj(Obj[key], `${Parent}_${key}`);
+    }else{
+        flatObj[`${Parent}_${key}`] = Obj[key];
+    }
+}
+return flatObj;
+}
+
+console.log(flattenObj(user,'user'));
+
+
+let nArray = [];  
+function flatten_Array(arr){
+for(let i = 0; i < arr.length; i++){
+    if(arr[i].hasOwnProperty(children)){
+        for(let j = 0; j < arr[i].children.length; j++){
+            if(arr[i].id === arr[i].children[j].parent){
+                arr[i].children.push(arr[i].children[j]);
+            }
+        }
+    }else{
+        if(!nArray.length){
+        arr[i].children = [];
+        nArray.push(arr[i]);
+        }else{
+            flatten_Array(nArray);
+        }
+    }
+}
+}
+
+
+3. let myTree = [
+ {
+     title:1123
+     parent:null,
+     id:1,
+ },
+ {
+     title:1123
+     parent:1,
+     id:2,
+ },
+ {
+     title:1123
+     parent:1,
+     id:3,
+ },
+ {
+     title:1123
+     parent:2,
+     id:4,
+ },
+ {
+     title:1123
+     parent:2,
+     id:5,
+ },
+ {
+     title:1123
+     parent:5,
+     id:6,
+ },
+ {
+     title:1123
+     parent:6,
+     id:7,
+ },
+ {
+     title:1123
+     parent:7,
+     id:8,
+ },
+];
+
+O/p should be: 
+
+flattenObj = {
+    {
+     title:1123
+     parent:null,
+     id:1,
+     children:[
+         {
+            title:1123
+            parent:1,
+            id:2,
+            children: [
+                {
+                    title:1123
+                    parent:2,
+                    id:4,
+                },
+                {
+                    title:1123
+                    parent:2,
+                    id:5,
+                    children:{
+                        {
+                        title:1123
+                        parent:5,
+                        id:6,
+                        :
+                        :
+                        :
+                        so on
+                        },
+                    }
+                },
+            ]
+        },
+        {
+            title:1123
+            parent:1,
+            id:3,
+        },
+     ]
+ },
+}
+
